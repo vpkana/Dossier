@@ -1,11 +1,11 @@
-const github = 'https://github.com/Redakai-07';
+const github = 'https://github.com/vpkana';
 import { Tooltip } from 'antd';
 import { useNavigate } from 'react-router-dom';
 
-const empGithub = 'https://github.com/Redakai-07/Employee';
-const taskGithub = 'https://github.com/Redakai-07/Task-Flow-Navigation';
-const formGithub = 'https://github.com/Redakai-07/Form-Validation';
-const momentumGithub = 'https://github.com/Redakai-07/Momentum';
+const empGithub = 'https://github.com/vpkana/Employee';
+const taskGithub = 'https://github.com/vpkana/Task-Flow-Navigation';
+const formGithub = 'https://github.com/vpkana/Form-Validation';
+const momentumGithub = 'https://github.com/vpkana/Momentum';
 
 // const empDemo = import.meta.env.VITE_EMPLOYEE_MANAGEMENT_SYSTEM_LIVE;
 const taskDemo = 'https://taskflow-07.web.app/';

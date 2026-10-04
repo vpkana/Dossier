@@ -84,7 +84,7 @@ Technologies include React, Ant Design, JavaScript, pattern recognition, and for
 ## Portfolio Links
 
 - [Portfolio](https://vpkana.web.app/)
-- [GitHub](https://github.com/Redakai-07)
+- [GitHub](https://github.com/vpkana)
 - [LinkedIn](https://www.linkedin.com/in/prabhatha-kana/)
 
 ## Preferred Name References

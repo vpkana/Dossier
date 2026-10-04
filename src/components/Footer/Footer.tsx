@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 
 const linkedIn = "https://www.linkedin.com/in/prabhatha-kana/";
-const gitHub = "https://github.com/Redakai-07";
+const gitHub = "https://github.com/vpkana";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
