@@ -32,9 +32,9 @@ const Education = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-indigo-400 bg-clip-text text-transparent mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-indigo-400 bg-clip-text text-transparent mb-6">
             Education & Certifications
-          </h2>
+          </h1>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
             My academic journey and professional certifications that shape my expertise
           </p>
@@ -54,7 +54,7 @@ const Education = () => {
             </div>
             <div className="space-y-6">
               {education.map((item, index) => (
-                <div
+                <article
                   key={index}
                   className="group backdrop-blur-sm p-6 rounded-2xl border shadow-lg hover:shadow-blue-500/20 transition-all duration-300 hover:scale-105 hover:border-blue-400/40"
                   style={{
@@ -68,7 +68,7 @@ const Education = () => {
                   </h4>
                   <p className="mb-2" style={{ color: 'var(--text-secondary)' }}>{item.college}</p>
                   <p className="text-sm" style={{ color: 'var(--text-muted)' }}>{item.year}</p>
-                </div>
+                </article>
               ))}
             </div>
           </div>

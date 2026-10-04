@@ -20,6 +20,18 @@ const Footer = () => {
         return [
           { href: "#education", label: "Education" },
         ];
+      case "/projects":
+        return [
+          { href: "#projects", label: "Projects" },
+          { href: "/about", label: "About Me" },
+          { href: "/education", label: "Education" },
+        ];
+      case "/projects/momentum":
+        return [
+          { href: "/projects", label: "Projects" },
+          { href: "/about", label: "About Me" },
+          { href: "/contact", label: "Contact Me" },
+        ];
       case "/about":
         return [
           { href: "#about", label: "About Me" },

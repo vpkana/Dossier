@@ -142,11 +142,11 @@ const AboutMe = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-indigo-400 bg-clip-text text-transparent mb-4">
-            About Me
-          </h2>
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-indigo-400 bg-clip-text text-transparent mb-4">
+            About Venkatesh Prabhatha Kana
+          </h1>
           <p className="text-lg max-w-3xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
-            A passionate CS Grad crafting digital experiences with modern technologies
+            M.Tech Software Engineering student at MANIT Bhopal and full-stack developer with a computer science background.
           </p>
         </div>
 
@@ -171,7 +171,7 @@ const AboutMe = () => {
             </motion.div>
             
             <div className="text-center">
-              <h3 className="text-2xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>Venkatesh Prabhatha Kana</h3>
+              <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>Venkatesh Prabhatha Kana</h2>
               <p className="font-medium mb-4" style={{ color: 'var(--accent-secondary)' }}>Full-Stack Developer</p>
               <div className="flex justify-center space-x-4">
                 <div className="text-center">
@@ -491,7 +491,7 @@ const AboutMe = () => {
                   
                   {/* Content Card */}
                   <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'} mt-8 md:mt-0`}>
-                    <div className="backdrop-blur-sm p-6 rounded-xl border hover:border-blue-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group" style={{
+                    <article className="backdrop-blur-sm p-6 rounded-xl border hover:border-blue-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group" style={{
                       background: 'var(--bg-secondary)',
                       borderColor: 'var(--border-secondary)'
                     }}>
@@ -535,7 +535,7 @@ const AboutMe = () => {
                           </svg>
                         </a>
                       )}
-                    </div>
+                    </article>
                   </div>
                 </motion.div>
               ))}

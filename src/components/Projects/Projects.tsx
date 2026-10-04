@@ -1,6 +1,5 @@
-const github = 'https://github.com/vpkana';
 import { Tooltip } from 'antd';
-import { useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const empGithub = 'https://github.com/vpkana/Employee';
 const taskGithub = 'https://github.com/vpkana/Task-Flow-Navigation';
@@ -50,6 +49,8 @@ const projects = [
 
 const Projects = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const Heading = location.pathname === '/projects' ? 'h1' : 'h2';
 
   const handleDemoClick = (demoUrl: string) => {
     if (!demoUrl || demoUrl === '#') {
@@ -76,9 +77,9 @@ const Projects = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-indigo-400 bg-clip-text text-transparent mb-4">
-            Featured Projects
-          </h2>
+          <Heading className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-indigo-400 bg-clip-text text-transparent mb-4">
+            {location.pathname === '/projects' ? 'Selected Software Projects' : 'Featured Projects'}
+          </Heading>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
             Explore my latest work showcasing modern web development and innovative solutions
           </p>
@@ -121,6 +122,15 @@ const Projects = () => {
                 <p className="text-sm mb-6 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
                   {project.description}
                 </p>
+                {project.title === 'Momentum' && (
+                  <Link
+                    to="/projects/momentum"
+                    className="inline-block text-sm font-medium underline underline-offset-4 mb-6 hover:text-blue-300"
+                    style={{ color: 'var(--accent-primary)' }}
+                  >
+                    Read the Momentum project overview
+                  </Link>
+                )}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, i) => (
                     <span
@@ -175,17 +185,15 @@ const Projects = () => {
 
         {/* View more projects button */}
         <div className="text-center mt-12">
-          <a
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/projects"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             View All Projects
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

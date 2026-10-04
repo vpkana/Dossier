@@ -136,7 +136,7 @@ const CertificateViewer = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center h-21 gap-4">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ background: 'var(--bg-tertiary)' }}>
-              <img src={icon} alt="Certificate Logo" className="w-10 h-10" />
+              <img src={icon} alt="" className="w-10 h-10" />
             </div>
             <div>
               <h3 className="text-xl font-semibold group-hover:text-blue-200 transition-colors duration-300" style={{ color: 'var(--accent-secondary)' }}>

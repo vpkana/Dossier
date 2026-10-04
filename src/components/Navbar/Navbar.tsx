@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useTheme } from "../../contexts/ThemeContext";
 import { Dropdown, Menu } from "antd";
-import darkLogo from "../../assets/dark.png";
-import lightLogo from "../../assets/light.png";
+import darkLogo from "../../assets/dark.webp";
+import lightLogo from "../../assets/light.webp";
 
 const NAV_ITEMS = [
   { label: "Home", path: "/" },
+  { label: "Projects", path: "/projects" },
   { label: "Education", path: "/education" },
   { label: "About Me", path: "/about" },
   { label: "Contact Me", path: "/contact" },
@@ -63,36 +64,33 @@ const Navbar = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo or Brand */}
         <div className="group">
-          <img
-            src={theme === 'dark' ? darkLogo : lightLogo}
-            alt="VPK Logo"
-            className="h-8 md:h-10 cursor-pointer select-none hover:scale-105 transition-all duration-300 drop-shadow-lg hover:drop-shadow-xl filter brightness-100 hover:brightness-110"
-            onClick={() => navigate("/")}
-          />
+          <Link to="/" aria-label="Venkatesh Prabhatha Kana home">
+            <img
+              src={theme === 'dark' ? darkLogo : lightLogo}
+              alt="Venkatesh Prabhatha Kana"
+              className="h-8 md:h-10 cursor-pointer select-none hover:scale-105 transition-all duration-300 drop-shadow-lg hover:drop-shadow-xl filter brightness-100 hover:brightness-110"
+            />
+          </Link>
           <div className="h-0.5 bg-gradient-to-r from-blue-400 via-teal-400 to-indigo-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-12 text-white font-semibold tracking-wide items-center" role="menubar">
           {NAV_ITEMS.map((item) => (
-            <li
-              key={item.path}
-              className={`cursor-pointer text-lg transition-all duration-300 relative group ${
-                isActive(item.path) 
-                  ? "text-blue-400" 
-                  : "hover:text-blue-400"
-              }`}
-              onClick={() => handleNavigate(item.path)}
-              role="menuitem"
-              tabIndex={0}
-              onKeyDown={e => {
-                if (e.key === "Enter" || e.key === " ") handleNavigate(item.path);
-              }}
-              style={{ color: isActive(item.path) ? 'var(--accent-primary)' : 'var(--text-primary)' }}
-            >
-              {item.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 transition-all duration-300 group-hover:w-full rounded-full"></span>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-teal-400 to-indigo-400 transition-all duration-300 group-hover:w-full rounded-full delay-75"></span>
+            <li key={item.path} className="relative group">
+              <Link
+                to={item.path}
+                className={`text-lg transition-all duration-300 ${
+                  isActive(item.path) ? "text-blue-400" : "hover:text-blue-400"
+                }`}
+                role="menuitem"
+                aria-current={isActive(item.path) ? "page" : undefined}
+                style={{ color: isActive(item.path) ? 'var(--accent-primary)' : 'var(--text-primary)' }}
+              >
+                {item.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-teal-400 transition-all duration-300 group-hover:w-full rounded-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-teal-400 to-indigo-400 transition-all duration-300 group-hover:w-full rounded-full delay-75"></span>
+              </Link>
             </li>
           ))}
           

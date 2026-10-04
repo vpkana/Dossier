@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import { preloadCriticalComponents } from "../../utils/preloadUtils";
+import SeoHead from "../../seo/SeoHead";
 
 const Layout = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const Layout = () => {
 
   return (
     <>
+      <SeoHead />
       <ScrollToTop />
       <Navbar />
       <div className="pt-20">

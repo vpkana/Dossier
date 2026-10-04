@@ -4,7 +4,7 @@ import Layout from './components/Layout/Layout';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { ExplorationProvider } from './contexts/ExplorationContext';
 import { Suspense } from 'react';
-import { Home, Education, AboutMe, Contact, PageNotFound, UnderConstruction } from './utils/dynamicImports';
+import { Home, Education, AboutMe, Contact, PageNotFound, UnderConstruction, Projects, MomentumProject } from './utils/dynamicImports';
 
 // Loading component for Suspense fallback
 const LoadingSpinner = () => (
@@ -28,6 +28,16 @@ function App() {
               <Route path="education" element={
                 <Suspense fallback={<LoadingSpinner />}>
                   <Education />
+                </Suspense>
+              } />
+              <Route path="projects" element={
+                <Suspense fallback={<LoadingSpinner />}>
+                  <Projects />
+                </Suspense>
+              } />
+              <Route path="projects/momentum" element={
+                <Suspense fallback={<LoadingSpinner />}>
+                  <MomentumProject />
                 </Suspense>
               } />
               <Route path="about" element={

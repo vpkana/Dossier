@@ -7,6 +7,7 @@ export const AboutMe = lazy(() => import('../models/AboutMe/AboutMe'));
 export const Contact = lazy(() => import('../models/Contact/Contact'));
 export const PageNotFound = lazy(() => import('../models/PageNotFound/PageNotFound'));
 export const UnderConstruction = lazy(() => import('../models/UnderConstruction/UnderConstruction'));
+export const MomentumProject = lazy(() => import('../models/Projects/MomentumProject'));
 
 // Home page components - these will be dynamically loaded
 export const Hero = lazy(() => import('../components/Hero/Hero'));

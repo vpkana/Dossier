@@ -1,0 +1,208 @@
+{
+  "siteUrl": "https://vpkana.web.app",
+  "person": {
+    "name": "Venkatesh Prabhatha Kana",
+    "alternateName": [
+      "Venkatesh Prabhath Kana",
+      "Venkatesh Prabhat Kana",
+      "Venkatesh Prabath Kana",
+      "Venkatesh Prabhatha",
+      "VPKana",
+      "VPK",
+      "vpkana",
+      "vpk"
+    ],
+    "jobTitle": "M.Tech Software Engineering Student",
+    "description": "Venkatesh Prabhatha Kana is an M.Tech Software Engineering student at Maulana Azad National Institute of Technology (MANIT), Bhopal, and a full-stack developer interested in building reliable, user-focused software.",
+    "image": "https://vpkana.web.app/profile.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/vpkana/",
+      "https://github.com/vpkana"
+    ]
+  },
+  "pages": {
+    "/": {
+      "title": "Venkatesh Prabhatha Kana | M.Tech Software Engineering Student & Full-Stack Developer",
+      "description": "Portfolio of Venkatesh Prabhatha Kana, M.Tech Software Engineering student at MANIT Bhopal. Explore his education, experience, and software projects.",
+      "heading": "Venkatesh Prabhatha Kana",
+      "intro": "M.Tech Software Engineering student at Maulana Azad National Institute of Technology (MANIT), Bhopal, and a full-stack developer with a background in computer science.",
+      "schema": "profile",
+      "sections": [
+        {
+          "heading": "Education",
+          "paragraphs": [
+            "I am pursuing an M.Tech in Software Engineering at Maulana Azad National Institute of Technology (MANIT), Bhopal. I completed a B.E. in Computer Science and Engineering at Govt. Sri Krishnarajendra Technological Institute, Bengaluru."
+          ],
+          "links": [
+            { "label": "View education and certifications", "href": "/education" },
+            { "label": "About Venkatesh", "href": "/about" }
+          ]
+        },
+        {
+          "heading": "Selected project",
+          "paragraphs": [
+            "Momentum is an offline-first personal productivity application for task planning, time tracking, scheduling, consistency tracking, and local notifications."
+          ],
+          "links": [
+            { "label": "Read the Momentum project overview", "href": "/projects/momentum" },
+            { "label": "Browse all featured projects", "href": "/projects" }
+          ]
+        }
+      ]
+    },
+    "/about": {
+      "title": "About Venkatesh Prabhatha Kana | MANIT Software Engineering",
+      "description": "Learn about Venkatesh Prabhatha Kana, an M.Tech Software Engineering student at MANIT Bhopal, his software engineering interests, education, and experience.",
+      "heading": "About Venkatesh Prabhatha Kana",
+      "intro": "I am an M.Tech Software Engineering student at Maulana Azad National Institute of Technology (MANIT), Bhopal, with a computer science background and hands-on full-stack development experience.",
+      "schema": "profile",
+      "sections": [
+        {
+          "heading": "Software engineering interests",
+          "paragraphs": [
+            "I enjoy solving practical problems and building reliable, maintainable software with thoughtful user experiences. My interests include full-stack application development, software engineering, artificial intelligence, machine learning, and cloud architecture."
+          ]
+        },
+        {
+          "heading": "Education",
+          "items": [
+            "M.Tech in Software Engineering, Maulana Azad National Institute of Technology (MANIT), Bhopal (2026–present).",
+            "B.E. in Computer Science and Engineering, Govt. Sri Krishnarajendra Technological Institute, Bengaluru (2021–2025)."
+          ],
+          "links": [
+            { "label": "Education and certifications", "href": "/education" }
+          ]
+        },
+        {
+          "heading": "Experience and projects",
+          "paragraphs": [
+            "My portfolio records a Full Stack Developer Intern role at Inventech Info Solutions in 2025 and also mentions hands-on experience with Rooman Technologies."
+          ],
+          "links": [
+            { "label": "Explore selected software projects", "href": "/projects" },
+            { "label": "Contact Venkatesh", "href": "/contact" }
+          ]
+        }
+      ]
+    },
+    "/education": {
+      "title": "Education & Certifications | Venkatesh Prabhatha Kana",
+      "description": "Education and certifications of Venkatesh Prabhatha Kana: M.Tech Software Engineering at MANIT Bhopal and B.E. in Computer Science Engineering.",
+      "heading": "Education & Certifications",
+      "intro": "My academic background in software engineering and computer science, along with certifications in web development, cloud computing, and AI-related subjects.",
+      "schema": "profile",
+      "sections": [
+        {
+          "heading": "Education",
+          "items": [
+            "M.Tech in Software Engineering, Maulana Azad National Institute of Technology (MANIT), Bhopal (2026–present).",
+            "B.E. in Computer Science and Engineering, Govt. Sri Krishnarajendra Technological Institute, Bengaluru (2021–2025)."
+          ]
+        },
+        {
+          "heading": "Professional experience",
+          "items": [
+            "Full Stack Developer Intern, Inventech Info Solutions (2025)."
+          ]
+        },
+        {
+          "heading": "Certifications",
+          "paragraphs": [
+            "The portfolio includes certificates in artificial intelligence, machine learning, natural language processing, cloud computing, Java, Python, and web application development."
+          ],
+          "links": [
+            { "label": "About Venkatesh", "href": "/about" },
+            { "label": "View selected projects", "href": "/projects" }
+          ]
+        }
+      ]
+    },
+    "/contact": {
+      "title": "Contact Venkatesh Prabhatha Kana",
+      "description": "Contact Venkatesh Prabhatha Kana about software engineering, full-stack development, and project opportunities.",
+      "heading": "Contact Venkatesh Prabhatha Kana",
+      "intro": "Use the contact form on this page to get in touch about software engineering, full-stack development, or project opportunities.",
+      "sections": [
+        {
+          "heading": "Professional profiles",
+          "paragraphs": [
+            "You can also find Venkatesh Prabhatha Kana on GitHub and LinkedIn."
+          ],
+          "links": [
+            { "label": "GitHub profile", "href": "https://github.com/vpkana" },
+            { "label": "LinkedIn profile", "href": "https://www.linkedin.com/in/vpkana/" }
+          ]
+        }
+      ]
+    },
+    "/projects": {
+      "title": "Software Projects | Venkatesh Prabhatha Kana",
+      "description": "Selected software projects by Venkatesh Prabhatha Kana, including Momentum, an offline-first personal productivity application.",
+      "heading": "Selected Software Projects",
+      "intro": "A selection of web and software projects built with modern frontend, backend, and data technologies.",
+      "sections": [
+        {
+          "heading": "Momentum",
+          "paragraphs": [
+            "An offline-first personal productivity application for task planning, time tracking, scheduling, consistency tracking, and local notifications."
+          ],
+          "links": [
+            { "label": "Momentum project overview", "href": "/projects/momentum" },
+            { "label": "Momentum source code on GitHub", "href": "https://github.com/vpkana/Momentum" },
+            { "label": "Momentum live application", "href": "https://momentumz.web.app/" }
+          ]
+        },
+        {
+          "heading": "Other featured projects",
+          "items": [
+            "Employee Management System — full-stack employee management with role-based access control and JWT authentication.",
+            "Task Flow Navigator — React application with guided task flows and authentication features.",
+            "Form Validation — company registration application with business-field validation."
+          ],
+          "links": [
+            { "label": "Browse project repositories on GitHub", "href": "https://github.com/vpkana" }
+          ]
+        }
+      ]
+    },
+    "/projects/momentum": {
+      "title": "Momentum — Offline-First Productivity App | Venkatesh Prabhatha Kana",
+      "description": "Momentum is an offline-first personal productivity app for planning tasks, tracking time and consistency, scheduling work, and receiving local notifications.",
+      "heading": "Momentum",
+      "intro": "An offline-first personal productivity application for task planning, time tracking, scheduling, consistency tracking, and local notifications.",
+      "schema": "softwareApplication",
+      "sections": [
+        {
+          "heading": "Purpose",
+          "paragraphs": [
+            "Momentum is designed to help people decide what to do next and maintain a practical routine. It supports daily and occasional tasks, custom sections, calendar planning, time-based performance tracking, streaks, recovery days, and next-action guidance.",
+            "Core productivity data is stored locally with IndexedDB, so the application can be used without an account, backend, or internet connection. Local notifications support reminders."
+          ]
+        },
+        {
+          "heading": "Technologies",
+          "items": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Zustand",
+            "Dexie",
+            "IndexedDB",
+            "Capacitor"
+          ]
+        },
+        {
+          "heading": "Project links",
+          "paragraphs": [
+            "View the source code or open the deployed Momentum application."
+          ],
+          "links": [
+            { "label": "Momentum source code on GitHub", "href": "https://github.com/vpkana/Momentum" },
+            { "label": "Open the Momentum live application", "href": "https://momentumz.web.app/" },
+            { "label": "Back to all selected projects", "href": "/projects" }
+          ]
+        }
+      ]
+    }
+  }
+}
