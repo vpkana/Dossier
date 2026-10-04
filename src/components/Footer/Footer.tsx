@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 
-const linkedIn = "https://www.linkedin.com/in/prabhatha-kana/";
+const linkedIn = "https://www.linkedin.com/in/vpkana/";
 const gitHub = "https://github.com/vpkana";
 
 const Footer = () => {
